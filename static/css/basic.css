@@ -1,0 +1,49 @@
+table,tr,td,th,thead{
+  padding: 10px;
+  margin: 20px;
+  border: 2px solid green;
+  font-size: 20px;
+  color:black;
+  background:url(https://images.unsplash.com/flagged/photo-1600026446620-5ace96974a3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60)
+  margin:auto;
+
+}
+th,thead{
+  border:2px solid green;
+  color: red;
+  margin: auto;
+  background: yellow;
+
+}
+hr{
+  background: green;
+}
+.container .jumbotron{
+  margin-top: 20px;
+
+  color: blue;
+}
+h1{
+  color:orange;
+}
+p{
+  color:green;
+  font-size: 20px;
+}
+
+
+
+form{
+  padding: 10px;
+  margin:3% 20% 3% 20%;
+  background: orange
+  color:green;
+}
+body{
+  background: url(https://images.unsplash.com/photo-1598805116461-79831baa6f86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80);
+  backgroun-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/basic.css"%}">
+
+  </head>
+  <body>
+    <div class="container" align="center">
+
+
+    <h1>Movies Information...!</h1><hr>
+
+    {%if movies_list%}
+        <table>
+          <thead>
+             <th>Movie Name</th>
+             <th>Release Date</th>
+             <th>Hero</th>
+             <th>Heroine</th>
+             <th>Rating</th>
+             
+          </thead>
+
+            {%for movie in movies_list%}
+                <tr>
+                     <td>{{movie.MovieName|title}}</td>
+                     <td>{{movie.ReleaseDate|date:"d-m-y"}}</td>
+                     <td>{{movie.Hero|title}}</td>
+                     <td>{{movie.Heroine|title}}</td>
+                     <td>{{movie.Rating}}</td>
+
+                </tr>
+               {%endfor%}
+        </table>
+        {%else%}
+            <p>No Movies Found..!</p>
+  {%endif%}
+
+            <a class="btn btn-primary" href='/'>click here for Home page</a>
+
+  </div>
+
+  </body>
+</html>
