@@ -30,3 +30,5 @@ def add_movie(request):
 def list_view(request):
     movies_list=Movie.objects.all().order_by('-ReleaseDate')
     return render(request, 'testapp/list.html',{'movies_list':movies_list})
+def testview(request):
+    pass
